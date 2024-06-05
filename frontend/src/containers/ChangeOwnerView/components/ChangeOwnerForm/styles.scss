@@ -1,0 +1,51 @@
+:local(.styles) {
+    width: 630px;
+    margin: auto;
+    border-radius: 12px;
+    border: 1px solid rgb(231, 232, 242);
+    box-shadow: rgba(20, 42, 74, 0.3) 0px 30px 54px -15px;
+
+    form,
+    input,
+    button,
+    .text-input {
+        width: 100%;
+    }
+    
+    .section { 
+        padding: 30px;
+    }
+
+
+    button {
+        border-radius: 5px;
+        border: 1px solid transparent;
+        padding: 16px;
+        font-weight: bold;
+        background: $lightPink;
+        margin-top: -20px;
+
+        &:hover { background: $darkerPink; }
+
+        .btn-label { font-size: 20px; }
+    }
+
+    .label {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    input {
+        padding-top: 28px;
+        padding-left: 15px;
+    }
+
+    @media (max-width: 800px) {
+        width: auto;
+
+        #current-owner {
+            word-wrap: break-word;
+        }
+    }
+}
+  
